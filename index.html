@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deenice Finds | THINGS I TRY TO SELL</title>
+  <meta name="description" content="THINGS I TRY TO SELL - Shop trendy accessories at Deenice Finds. Fast orders via WhatsApp." />
+  <meta property="og:title" content="Deenice Finds" />
+  <meta property="og:description" content="THINGS I TRY TO SELL - Shop trendy accessories at Deenice Finds." />
+  <meta property="og:image" content="https://i.postimg.cc/441XX552/O1-CN01-Sj-Tb-Ky2-G1tx7oc-Nfp-2213981258956-0-cib.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="https://i.postimg.cc/nh989YvT/denice.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Minimal: load main.js deferred at end for performance -->
+</head>
+<body>
+  <div class="page-fade" id="page">
+    <main class="container">
+      <header class="header">
+        <div class="logo-wrap">
+          <img src="https://i.postimg.cc/nh989YvT/denice.jpg" alt="Deenice Finds logo" class="logo" loading="lazy">
+        </div>
+        <div class="brand">
+          <h1 class="brand-title">Deenice Finds</h1>
+          <div class="brand-tag">THINGS I TRY TO SELL</div>
+        </div>
+      </header>
+
+      <section id="products" class="grid"></section>
+
+      <footer class="footer">
+        <div>
+          <strong>Deenice Finds</strong><br>
+          <a href="mailto:deenicevida@gmail.com">deenicevida@gmail.com</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.instagram.com/deenice.vida/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Floating WhatsApp CTA -->
+  <a class="whatsapp-float" id="whatsappFloat" href="https://wa.me/254799507007" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M20.52 3.48A11.95 11.95 0 0012.01.01 11.95 11.95 0 003.5 3.48 11.96 11.96 0 00.01 12c0 2.11.55 4.17 1.6 6.01L.03 24l6.99-1.82A11.95 11.95 0 0012 24c2.11 0 4.17-.55 6.01-1.6A11.96 11.96 0 0023.99 12c0-3.21-1.24-6.21-3.48-8.52z"/><path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.671.15-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.149-.173.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.671-1.611-.92-2.231-.242-.579-.487-.5-.671-.51l-.573-.01c-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487 2.98 1.286 2.98.857 3.515.802.536-.056 1.758-.72 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+
+  <!-- Chatbot placeholder (Tidio) -->
+  <div class="chat-placeholder" id="chatPlaceholder" title="Chat with us (placeholder)">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill="#0f172a" d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  </div>
+
+  <!-- Modal order (reused internally) -->
+  <div id="modalBackdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modalTitle"></h3>
+        <button id="closeModal" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="" class="modal-img" loading="lazy">
+        <p id="modalDesc" class="muted"></p>
+        <div class="row"><label>Quantity</label><input id="orderQty" type="number" min="1" value="1"></div>
+        <div class="row"><label>Your WhatsApp (with country code)</label><input id="orderBuyer" type="tel" placeholder="+2547..."></div>
+        <div class="row"><label>Location</label><input id="orderLocation" type="text" placeholder="City, Country"></div>
+        <div id="colorSelectWrap" style="display:none" class="row"><label>Color</label><select id="orderColor"><option>Black</option><option>White</option><option>Pink</option></select></div>
+        <div class="row"><label>Notes</label><textarea id="orderNotes" rows="3"></textarea></div>
+        <button id="sendOrderBtn" class="btn-primary">Send order to WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tidio (placeholder) - replace YOUR_TIDIO_ID with your key from tidio.com -->
+  <script src="//code.tidio.co/YOUR_TIDIO_ID.js" async></script>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
