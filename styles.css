@@ -1,0 +1,113 @@
+/* styles.css - Deenice Finds
+   Colors, spacing and layout inspired by Apple / BackMarket
+   Change variables at top to customize look.
+*/
+:root{
+  --bg: #F8F9FC;
+  --glass: rgba(255,255,255,0.72);
+  --accent: #0071E3;
+  --muted: #64748b;
+  --card-shadow: 0 8px 30px rgba(20,20,30,0.08);
+  --radius: 14px;
+  --highlight: #D9E4FC;
+  --selected: #F6F2FD;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:#0f1724;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  scroll-behavior:smooth;
+}
+
+/* Header */
+.site-header{background:transparent;padding:12px 20px 8px;position:relative}
+.header-inner{display:flex;align-items:center;gap:16px;max-width:1200px;margin:0 auto}
+.brand img{height:38px}
+.hamburger{display:none;background:none;border:0;font-size:22px}
+.main-nav ul{display:flex;gap:12px;list-style:none;padding:0;margin:0;align-items:center}
+.main-nav a{color:var(--muted);text-decoration:none;padding:8px 10px;border-radius:10px}
+.main-nav .has-dropdown{position:relative}
+.dropdown{position:absolute;top:44px;left:0;background:var(--glass);backdrop-filter:blur(8px);padding:8px;border-radius:10px;box-shadow:var(--card-shadow);display:none;min-width:160px}
+.has-dropdown:hover .dropdown{display:block}
+.dropdown a{display:block;padding:8px;color:#0f1724}
+
+/* Header action area */
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+.icon-btn{background:none;border:0;font-size:18px;padding:8px;border-radius:8px;cursor:pointer}
+#cartCount{background:var(--accent);color:#fff;padding:2px 6px;border-radius:999px;margin-left:6px;font-size:12px}
+
+/* Search */
+.search-box{position:relative}
+.search-box input{width:0;padding:8px 10px;border-radius:10px;border:1px solid transparent;transition:width .25s ease;background:#fff}
+.search-box.hidden input{width:0;padding:0;border:0}
+.search-box input:focus{outline:none;box-shadow:var(--card-shadow)}
+.suggestions{position:absolute;top:38px;left:0;width:320px;background:#fff;border-radius:8px;box-shadow:var(--card-shadow);display:none;overflow:hidden;z-index:20}
+.suggestion{display:flex;gap:8px;padding:8px;align-items:center;border-bottom:1px solid #f1f3f5}
+.suggestion img{width:48px;height:48px;object-fit:cover;border-radius:8px}
+
+/* Offers slider */
+.offers{max-width:1200px;margin:12px auto;border-radius:12px;overflow:hidden;position:relative}
+.offers-slider{display:flex;transition:transform .8s ease}
+.offers-slider .slide{min-width:100%;flex-shrink:0}
+.offers img{width:100%;height:160px;object-fit:cover;border-radius:12px}
+.offers-controls{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px}
+.dots{display:flex;gap:6px}
+.dots button{width:8px;height:8px;border-radius:999px;background:#d1d5db;border:0}
+.dots button.active{background:#111827}
+
+/* Main */
+.site-main{max-width:1200px;margin:24px auto;padding:0 16px}
+.hero{text-align:center;margin-bottom:20px}
+.hero h1{font-size:22px;margin:0}
+.subline{color:var(--muted)}
+
+/* Product grid */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:12px;box-shadow:var(--card-shadow);transition:transform .18s ease}
+.card:hover{transform:translateY(-6px)}
+.card img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+.card .title{font-weight:600;margin:8px 0}
+.card .price{color:var(--accent);font-weight:700}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(10,12,16,0.4);z-index:60}
+.modal.hidden{display:none}
+.modal-content{background:#fff;padding:16px;border-radius:12px;max-width:900px;width:100%;box-shadow:var(--card-shadow)}
+.product-detail{display:grid;grid-template-columns:1fr 360px;gap:16px}
+.gallery img{width:100%;height:320px;object-fit:contain;border-radius:8px}
+.color-selector{display:flex;gap:8px;margin:12px 0}
+.color-option{width:48px;height:48px;border-radius:8px;border:1px solid transparent;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.color-option.selected{background:var(--selected);border:1px solid var(--accent)}
+
+/* Cart drawer */
+.cart-drawer{position:fixed;right:12px;top:12px;width:320px;background:#fff;border-radius:12px;padding:12px;box-shadow:var(--card-shadow);z-index:70}
+.cart-drawer.hidden{display:none}
+
+/* Footer */
+.site-footer{background:transparent;padding:28px 16px;margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1200px;margin:0 auto}
+.site-footer a{display:block;color:var(--muted);text-decoration:none;margin:6px 0}
+
+/* Responsive */
+@media (max-width:900px){
+  .main-nav{display:none}
+  .hamburger{display:inline-block}
+  .header-inner{padding:8px}
+  .offers img{height:180px}
+  .product-detail{grid-template-columns:1fr;gap:12px}
+  .gallery img{height:260px}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+  .search-box input{width:180px}
+}
+@media (max-width:480px){
+  .offers img{height:220px}
+  .header-inner{gap:8px}
+  .brand img{height:34px}
+}
