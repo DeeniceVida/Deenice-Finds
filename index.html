@@ -74,5 +74,17 @@
 
   <!-- Main App Script -->
   <script src="app.js"></script>
+
+  <!-- Highlight effect trigger -->
+  <script>
+    const header = document.getElementById('siteHeader');
+    const searchBtn = document.getElementById('searchBtn');
+    searchBtn.addEventListener('click', () => {
+      header.classList.add('highlight');
+      setTimeout(() => header.classList.remove('highlight'), 800);
+    });
+  </script>
 </body>
 </html>
+
+
