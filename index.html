@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <!-- Allow zooming for accessibility -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Deenice Finds | Official Store</title>
 
@@ -29,19 +28,12 @@
         </div>
       </a>
 
-      <nav class="nav" id="nav">
-        <a href="index.html">Home</a>
-        <a href="product.html">Products</a>
-        <a href="blog.html">Blog</a>
-        <a href="mailto:deenicevida@gmail.com">Contact</a>
-      </nav>
-
       <div class="search-area" id="searchArea">
+        <button id="searchBtn" class="search-btn" aria-label="Search">🔍</button>
         <div class="search-wrap">
           <input id="searchInput" class="search-input" placeholder="Search products..." aria-label="Search products">
-          <ul id="searchSuggestions" class="search-suggestions" role="listbox" aria-label="Search suggestions"></ul>
+          <ul id="searchSuggestions" class="search-suggestions"></ul>
         </div>
-        <button id="searchBtn" class="search-btn" aria-label="Open search">🔍</button>
       </div>
     </div>
   </header>
@@ -52,9 +44,7 @@
       <p class="lead">Trendy pieces & accessories — order directly via WhatsApp. Fast shipping across Kenya.</p>
     </section>
 
-    <section class="products-grid" id="productsGrid" aria-live="polite">
-      <!-- Dynamic content loads here -->
-    </section>
+    <section class="products-grid" id="productsGrid" aria-live="polite"></section>
   </main>
 
   <footer class="site-footer">
@@ -69,21 +59,8 @@
     </div>
   </footer>
 
-  <!-- Tidio Chat -->
   <script src="//code.tidio.co/YOUR_TIDIO_ID.js" async></script>
-
-  <!-- Main App Script -->
-  <script src="app.js"></script>
-
-  <!-- Highlight effect trigger -->
-  <script>
-    const header = document.getElementById('siteHeader');
-    const searchBtn = document.getElementById('searchBtn');
-    searchBtn.addEventListener('click', () => {
-      header.classList.add('highlight');
-      setTimeout(() => header.classList.remove('highlight'), 800);
-    });
-  </script>
+  <script src="app.js" defer></script>
 </body>
 </html>
 
