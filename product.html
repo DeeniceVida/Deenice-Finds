@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<title>Product — Deenice Finds</title>
+<link rel="icon" href="https://i.postimg.cc/ChT8ngfm/logo-1-3x-100.jpg" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <!-- logo area: adjust --logo-height in styles.css to change logo size -->
+  <div class="header-inner"><a class="brand" href="index.html"><img src="https://i.postimg.cc/fWrSZtm0/logo-2-copy-2x.png" alt="logo" /></a></div>
+</header>
+
+<main class="product-page" id="productPage"></main>
+
+<footer class="site-footer"><p>© Deenice Finds</p></footer>
+
+<script>
+async function loadProducts(){ const r = await fetch('products.json'); return r.json(); }
+function getQueryParam(name){ return new URLSearchParams(location.search).get(name); }
+function formatKES(n){ return 'Ksh ' + Number(n).toLocaleString('en-KE'); }
+
+(async ()=>{
+  const products = await loadProducts();
+  const id = getQueryParam('id');
+  const p = products.find(x=>x.id===id) || products[0];
+  const el = document.getElementById('productPage');
+  el.innerHTML = `
+    <h1>${p.title}</h1>
+    <div class="gallery-swipe" id="gallery">${p.images.map(img=>`<img src="${img}" loading="lazy" />`).join('')}</div>
+    <h2 class="price">${formatKES(p.price)}</h2>
+    <div class="desc">${p.description}</div>
+    <div class="color-selector" id="colorSelector"></div>
+    <div class="selected-color-name" id="selectedColorName">Selected: ${p.colors[0].name}</div>
+    <label>Quantity:
+      <select id="qtySelect">${Array.from({length:10},(_,i)=>`<option value="${i+1}">${i+1}</option>`).join('')}</select>
+    </label>
+    <div style="margin-top:12px;"><button id="addToCart">Add to cart</button> <button id="buyNow">Buy via WhatsApp</button></div>
+  `;
+  const cs = document.getElementById('colorSelector');
+  p.colors.forEach((c,idx)=>{
+    const d = document.createElement('div');
+    d.className = 'color-option' + (idx===0 ? ' selected' : '');
+    d.dataset.color = c.name;
+    d.innerHTML = `<img src="${c.thumb}" style="width:40px;height:40px;object-fit:cover;border-radius:6px"/>`;
+    d.addEventListener('click', ()=>{
+      Array.from(cs.children).forEach(n=>n.classList.remove('selected'));
+      d.classList.add('selected');
+      document.getElementById('selectedColorName').textContent = 'Selected: ' + d.dataset.color;
+    });
+    cs.appendChild(d);
+  });
+
+  // add to cart
+  document.getElementById('addToCart').addEventListener('click', ()=>{
+    const color = cs.querySelector('.color-option.selected').dataset.color;
+    const qty = Number(document.getElementById('qtySelect').value);
+    let cart = JSON.parse(localStorage.getItem('deenice_cart')||'[]');
+    cart.push({id:p.id,title:p.title,price:p.price,qty,color});
+    localStorage.setItem('deenice_cart', JSON.stringify(cart));
+    alert('Added to cart');
+  });
+  document.getElementById('buyNow').addEventListener('click', ()=>{
+    const color = cs.querySelector('.color-option.selected').dataset.color;
+    const qty = Number(document.getElementById('qtySelect').value);
+    const phone = '+254106590617';
+    const msg = `Hello, I'm interested in *${p.title}*\nPrice: ${formatKES(p.price)}\nQuantity: ${qty}\nColor: ${color}`;
+    window.open('https://wa.me/' + phone.replace('+','') + '?text=' + encodeURIComponent(msg), '_blank');
+  });
+})();
+</script>
+</body>
+</html>
