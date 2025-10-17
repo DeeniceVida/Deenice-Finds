@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<title>Deenice Finds — Plugged By the Best</title>
+<link rel="icon" href="https://i.postimg.cc/ChT8ngfm/logo-1-3x-100.jpg" />
+<link rel="stylesheet" href="styles.css" />
+<script src="//code.tidio.co/kqlf54zch9h9olbcjin6kqpag9u5q1lr.js" async></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">☰</button>
+    <a class="brand" href="index.html"><img src="https://i.postimg.cc/fWrSZtm0/logo-2-copy-2x.png" alt="Deenice Finds logo" /></a>
+    <nav class="main-nav" role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-dropdown"><a href="products.html" aria-haspopup="true">Products ▾</a>
+          <div class="dropdown" role="menu">
+            <a href="products.html?cat=phones" role="menuitem">Phones</a>
+            <a href="products.html?cat=earbuds" role="menuitem">Earbuds</a>
+            <a href="products.html?cat=accessories" role="menuitem">Accessories</a>
+          </div>
+        </li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li class="has-dropdown"><a href="services.html" aria-haspopup="true">Services ▾</a>
+          <div class="dropdown" role="menu">
+            <a href="buy-for-me.html" role="menuitem">Buy for me (US phones)</a>
+            <a href="collaborate.html" role="menuitem">Collaborate</a>
+          </div>
+        </li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button id="searchToggle" class="icon-btn search-icon" aria-label="Search">🔍</button>
+      <div id="searchBox" class="search-box hidden">
+        <input id="searchInput" placeholder="Search products..." autocomplete="off" />
+        <div id="searchSuggest" class="suggestions hidden">
+          <div class="cat-chips"></div>
+          <div class="results"></div>
+        </div>
+      </div>
+      <a id="cartBtn" class="icon-btn" href="cart.html" aria-label="Cart">🛒<span id="cartCount">0</span></a>
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="blogs.html">Blogs</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+  </div>
+
+  <section class="offers" aria-label="Offers & updates">
+    <div class="offers-slider" id="offersSlider" tabindex="0">
+      <div class="slide"><img data-src="https://i.postimg.cc/xT35t3WK/image.png" alt="Offer 1" class="lazy" /></div>
+      <div class="slide"><img data-src="https://i.postimg.cc/k4tGgwxc/image.png" alt="Offer 2" class="lazy" /></div>
+      <div class="slide"><img data-src="https://i.postimg.cc/xT35t3WK/image.png" alt="Offer 3" class="lazy" /></div>
+    </div>
+    <div class="offers-controls">
+      <button id="prevOffer">‹</button>
+      <div class="dots" id="offerDots"></div>
+      <button id="nextOffer">›</button>
+    </div>
+  </section>
+</header>
+
+<main id="app" class="site-main">
+  <section class="hero">
+    <h1>Best-reviewed & tested items you can buy in Kenya</h1>
+    <p class="subline">Premium gadgets & accessories — tested, trusted, and ready to ship.</p>
+  </section>
+
+  <section class="product-grid" id="productGrid" aria-label="Products"></section>
+
+  <section class="blogs" id="blogs">
+    <h2>Latest blog</h2>
+    <article class="blog-card">
+      <h3><a href="blogs.html">Powerseed PS-A156: Best 10000 mAh Magnetic Wireless Power Bank for Travel & Outdoors 🚀</a></h3>
+      <p>Tired of cable clutter... <a href="blogs.html">Read more</a></p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h4>About</h4><a href="about.html">About us</a><a href="impact.html">Our impact</a></div>
+    <div><h4>Help</h4><a href="#" id="helpCenter">Help center</a><a href="mailto:deenicevida@gmail.com">Contact us</a></div>
+    <div><h4>Services</h4><a href="buy-for-me.html">Buy For Me (US phones)</a><a href="collaborate.html">Collaborate</a></div>
+    <div><h4>Follow</h4><a href="https://www.tiktok.com/@deenice.vida" target="_blank">TikTok</a><a href="https://www.instagram.com/deenice.vida/" target="_blank">Instagram</a></div>
+  </div>
+  <p class="copyright">© Deenice Finds — Plugged By the Best</p>
+</footer>
+
+<script src="app-v5.js" defer></script>
+</body>
+</html>
