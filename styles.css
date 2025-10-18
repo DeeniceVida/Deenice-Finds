@@ -10,7 +10,7 @@
   --selected: #F6F2FD;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   --premium: #ECF0FE;
-  --logo-height: 73px; /* CHANGE THIS to adjust logo size (e.g. 44px or 72px) */
+  --logo-height: 72px; /* CHANGE THIS to adjust logo size (e.g. 44px or 72px) */
 }
 
 *{box-sizing:border-box}
