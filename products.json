@@ -1,0 +1,82 @@
+[
+  {
+    "id": "p1",
+    "title": "Demo Product 1",
+    "short": "Demo short description",
+    "price": 2500,
+    "description": "<em>Demo product description.</em>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      }
+    ]
+  },
+  {
+    "id": "p2",
+    "title": "Demo Product 2",
+    "short": "Demo short description",
+    "price": 3000,
+    "description": "<em>Demo product description.</em>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      }
+    ]
+  },
+  {
+    "id": "p3",
+    "title": "Demo Product 3",
+    "short": "Demo short description",
+    "price": 3500,
+    "description": "<em>Demo product description.</em>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      }
+    ]
+  },
+  {
+    "id": "p4",
+    "title": "Demo Product 4",
+    "short": "Demo short description",
+    "price": 4000,
+    "description": "<em>Demo product description.</em>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      }
+    ]
+  },
+  {
+    "id": "p5",
+    "title": "Demo Product 5",
+    "short": "Demo short description",
+    "price": 4500,
+    "description": "<em>Demo product description.</em>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      }
+    ]
+  }
+]
