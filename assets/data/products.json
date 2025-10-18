@@ -1,0 +1,332 @@
+[
+  {
+    "id": "prod1",
+    "title": "Demo Product 1 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 1750,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod2",
+    "title": "Demo Product 2 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 2000,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod3",
+    "title": "Demo Product 3 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 2250,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod4",
+    "title": "Demo Product 4 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 2500,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod5",
+    "title": "Demo Product 5 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 2750,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod6",
+    "title": "Demo Product 6 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 3000,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod7",
+    "title": "Demo Product 7 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 3250,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod8",
+    "title": "Demo Product 8 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 3500,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod9",
+    "title": "Demo Product 9 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 3750,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  },
+  {
+    "id": "prod10",
+    "title": "Demo Product 10 \u2014 Premium Accessory",
+    "short": "High quality tested accessory.",
+    "price": 4000,
+    "description": "<em>Premium accessory \u2014 tested and certified.</em><p>Replace with full description.</p>",
+    "images": [
+      "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg",
+      "https://i.postimg.cc/D03nz6zL/Screenshot-2025-10-15-201118.png",
+      "https://i.postimg.cc/RZpmt4Fx/image.png",
+      "https://i.postimg.cc/kgHr4s1R/image.png",
+      "https://i.postimg.cc/V6LXV9wM/image.png"
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "thumb": "https://i.postimg.cc/NGRrkPRs/Hf7fb927b9b97487da96fbd5dd5bc6badx.jpg"
+      },
+      {
+        "name": "White",
+        "thumb": "https://i.postimg.cc/zGzWBSLp/H752e9673ded14855b91e284d97ed781c-F.jpg"
+      },
+      {
+        "name": "Blue",
+        "thumb": "https://i.postimg.cc/RZpmt4Fx/image.png"
+      },
+      {
+        "name": "Red",
+        "thumb": "https://i.postimg.cc/kgHr4s1R/image.png"
+      }
+    ],
+    "stock": true
+  }
+]
